@@ -8,9 +8,9 @@ html {
   }
 
   /* html, body {
-    overflow-x: hidden; /* يمنع التحرك بالعرض */
-    -webkit-overflow-scrolling: touch; /* سكرول ناعم على iPhone */
-    scroll-behavior: smooth; /* سكرول ناعم لأي جهاز */
+    overflow-x: hidden; 
+    -webkit-overflow-scrolling: touch; 
+    scroll-behavior: smooth; 
 } */
 
 /* EYAD 2034 */

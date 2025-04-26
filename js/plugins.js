@@ -25,24 +25,21 @@ $(document).ready(function () {
             // mousescrollstep: 40,
             disablemutationobserver: true
         });
-
-
-            // Caching The Scroll Top Element
-
-    $(window).scroll(function () {
-
-        if ($(this).scrollTop() >= 700) {
-
-            scrollButton.show();
-
-        } else {
-
-            scrollButton.hide();
-        }
-    });
-
-        
     }
+
+              // Caching The Scroll Top Element
+
+              $(window).scroll(function () {
+
+                if ($(this).scrollTop() >= 700) {
+        
+                    scrollButton.show();
+        
+                } else {
+        
+                    scrollButton.hide();
+                }
+            });
 
         
     document.addEventListener('touchmove', function(event) {
