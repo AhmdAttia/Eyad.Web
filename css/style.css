@@ -3,14 +3,15 @@ body {
     overflow:hidden
 }
 
+html {
+    scroll-behavior: smooth;
+  }
 
-  html, body {
-    /* overflow-x: hidden; */
-    -webkit-overflow-scrolling: touch; 
-    scroll-behavior: smooth; 
-    /* touch-action: none; */
-}
-
+  /* html, body {
+    overflow-x: hidden; /* يمنع التحرك بالعرض */
+    -webkit-overflow-scrolling: touch; /* سكرول ناعم على iPhone */
+    scroll-behavior: smooth; /* سكرول ناعم لأي جهاز */
+} */
 
 /* EYAD 2034 */
 /* EYAD 2034 */

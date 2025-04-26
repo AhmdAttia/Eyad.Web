@@ -21,8 +21,8 @@ $(document).ready(function () {
     // Check if the device is NOT mobile
     if (!/Mobi|Android/i.test(navigator.userAgent)) {
         $("html").niceScroll({
-            scrollspeed: 60,
-            mousescrollstep: 40,
+            // scrollspeed: 60,
+            // mousescrollstep: 40,
             disablemutationobserver: true
         });
 
@@ -40,7 +40,7 @@ $(document).ready(function () {
             scrollButton.hide();
         }
     });
-    
+
         
     }
 
