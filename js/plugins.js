@@ -25,21 +25,26 @@ $(document).ready(function () {
             // mousescrollstep: 40,
             disablemutationobserver: true
         });
+
+
+  
+
+        
     }
 
               // Caching The Scroll Top Element
 
-              $(window).scroll(function () {
+    $(window).scroll(function () {
 
-                if ($(this).scrollTop() >= 700) {
-        
-                    scrollButton.show();
-        
-                } else {
-        
-                    scrollButton.hide();
-                }
-            });
+        if ($(this).scrollTop() >= 700) {
+
+            scrollButton.show();
+
+        } else {
+
+            scrollButton.hide();
+        }
+    });
 
         
     document.addEventListener('touchmove', function(event) {
@@ -83,7 +88,7 @@ $(document).ready(function () {
     // Click On Button To Scroll Top
     scrollButton.click(function () {
 
-        $("html,body").animate({ scrollTop: 0 }, 600);
+        $("html,body").animate({ scrollTop: 0 }, 100);
 
     });
 
