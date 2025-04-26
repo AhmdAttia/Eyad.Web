@@ -3,15 +3,16 @@ body {
     overflow:hidden
 }
 
-/* html {
+html {
     scroll-behavior: smooth;
-  } */
+    -webkit-overflow-scrolling: touch; 
+  }
 
-  html, body {
-    /* overflow-x: hidden;  */
+  /* html, body {
+    overflow-x: hidden; 
     -webkit-overflow-scrolling: touch; 
     scroll-behavior: smooth; 
-}
+} */
 
 /* EYAD 2034 */
 /* EYAD 2034 */

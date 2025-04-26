@@ -19,9 +19,14 @@ $(document).ready(function () {
     // Nice Scroll
 
     // Check if the device is NOT mobile
-    if (!/Mobi|Android/i.test(navigator.userAgent)) {
-        $("html").niceScroll();
-    }
+if (/Mobi|Android/i.test(navigator.userAgent)) {
+    // تعطيل niceScroll للأجهزة المحمولة
+    $("html").css("overflow", "auto"); // إزالة النمط المخصص للتمرير
+} else {
+    // تفعيل niceScroll للأجهزة المكتبية
+    $("html").niceScroll();
+}
+
 
 
               // Caching The Scroll Top Element
