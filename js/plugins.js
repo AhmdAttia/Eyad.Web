@@ -1,26 +1,57 @@
 /*global $, jQuery, alert*/
 
 $(document).ready(function () {
-
+"use strict";
 
     const video = document.getElementById('myVideo');
     const muteButton = document.getElementById('muteButton');
 
-    muteButton.addEventListener('click', function () {
+ 
+    muteButton.addEventListener('click', function (event) {
         video.muted = !video.muted;
         muteButton.textContent = video.muted ? '🔇 Unmute' : '🔊 Mute';
-    });
+        event.preventDefault();
+    }, { passive: false });
 
 
-
-    "use strict";
+    
 
     // Nice Scroll
 
     // Check if the device is NOT mobile
     if (!/Mobi|Android/i.test(navigator.userAgent)) {
-        $("html").niceScroll();
+        $("html").niceScroll({
+            scrollspeed: 60,
+            mousescrollstep: 40,
+            disablemutationobserver: true
+        });
+
+
+            // Caching The Scroll Top Element
+
+    $(window).scroll(function () {
+
+        if ($(this).scrollTop() >= 700) {
+
+            scrollButton.show();
+
+        } else {
+
+            scrollButton.hide();
+        }
+    });
+    
+        
     }
+
+        
+    document.addEventListener('touchmove', function(event) {
+        event.preventDefault();
+    }, { passive: false });
+    
+    document.addEventListener('wheel', function(event) {
+        event.preventDefault();
+    }, { passive: false });
 
     // Show Color Option Div When Click On The Gear
 
@@ -50,19 +81,7 @@ $(document).ready(function () {
 
     });
 
-    // Caching The Scroll Top Element
 
-    $(window).scroll(function () {
-
-        if ($(this).scrollTop() >= 700) {
-
-            scrollButton.show();
-
-        } else {
-
-            scrollButton.hide();
-        }
-    });
 
     // Click On Button To Scroll Top
     scrollButton.click(function () {
