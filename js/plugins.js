@@ -2,6 +2,7 @@
 
 $(document).ready(function () {
  
+    
 const video = document.getElementById('myVideo');
 const muteButton = document.getElementById('muteButton');
 
@@ -16,7 +17,13 @@ muteButton.addEventListener('click', function () {
     
     // Nice Scroll
     
+    // $("html").niceScroll();
+
+// Check if the device is NOT mobile
+if (!/Mobi|Android/i.test(navigator.userAgent)) {
     $("html").niceScroll();
+}
+    
     
     $('.carousel').carousel({
         
