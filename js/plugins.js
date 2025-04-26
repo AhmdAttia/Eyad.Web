@@ -19,18 +19,16 @@ $(document).ready(function () {
     // Nice Scroll
 
     // Check if the device is NOT mobile
-    if (!/Mobi|Android/i.test(navigator.userAgent)) {
-        $("html").niceScroll({
+    // if (!/Mobi|Android/i.test(navigator.userAgent)) {
+    // }
+
+    $("html").niceScroll();
+        // $("html").niceScroll({   });
             // scrollspeed: 60,
             // mousescrollstep: 40,
-            disablemutationobserver: true
-        });
+            // disablemutationobserver: true
+     
 
-
-  
-
-        
-    }
 
               // Caching The Scroll Top Element
 
